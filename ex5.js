@@ -8,8 +8,12 @@
 
 
 function extractHexColors(s) {
-    /** Modifica solamente el cuerpo de la función */
+    /** Modifica solamente el cuerpo de la función */   
+    const regexp = /#[0-9a-fA-F]{6}/g;
+    const matches = s.match(regexp)
+    return matches
 }
+
 
 // Juegos de pruebas
 
