@@ -11,7 +11,11 @@ function extractHexColors(s) {
     /** Modifica solamente el cuerpo de la función */   
     const regexp = /#[0-9a-fA-F]{6}/g;
     const matches = s.match(regexp)
+    if(!matches){
+        return []
+    }
     return matches
+    // También podría ponerse como return matches || []
 }
 
 
