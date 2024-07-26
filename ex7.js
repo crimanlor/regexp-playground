@@ -11,7 +11,7 @@
  */
 function isSubstring(s1, s2) {
     const regexp = new RegExp (s2, "i")
-    // Busco y testeo si el string s2, contiene s1
+    // Busco y testeo si el string s1, contiene s2
     return regexp.test(s1)
 }
 
