@@ -7,10 +7,12 @@
 
 function filterWords(words) {
     // Expresión regular para verificar si una palabra es una matrícula de coche española.
-    const regex = /^cambiar$/
+    const regexp = /^[0-9]{4}[A-Z]{3}$/i;
 
     // Usa el método de array adecuado para FILTRAR cada uno de los strings para comprobar si realmente son una matrícula usando la expresión regular
-    return;
+    return words.filter(word => regexp.test(word))
+
+   
 }
 
 // Juegos de pruebas
